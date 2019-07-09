@@ -1,0 +1,15 @@
+server :
+  port : 8990
+
+spring :
+  config :
+    name : service-config
+  application :
+    name : service-config
+
+eureka :
+    client :
+      region : default
+      registryFetchIntervalSeconds : 5
+      serviceUrl :
+        defaultZone : http://localhost:8761/eureka
